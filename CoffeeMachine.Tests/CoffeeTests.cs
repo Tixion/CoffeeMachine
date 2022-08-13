@@ -12,7 +12,7 @@ namespace CoffeeMachine.Tests
         public void CreateCoffee_GiveRecipe_GivenRecipe()
         {
             //Arrange
-            Recipe recipe = new Recipe(100, 200, 0);
+            Recipe recipe = new Recipe(100, 200, 0, "name");
 
             //Act
             var coffee = new Coffee(recipe);

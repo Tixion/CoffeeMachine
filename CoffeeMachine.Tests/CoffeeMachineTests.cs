@@ -13,7 +13,7 @@ namespace CoffeeMachine.Tests
         {
             //Arrange
             CoffeeMachine coffeeMachine = new CoffeeMachine();
-            Recipe cappucinoRecipe = new Recipe(100, 200, 150);
+            Recipe cappucinoRecipe = new Recipe(100, 200, 150, "name");
             Coffee expectedCoffee = new Coffee(cappucinoRecipe);
 
             //Act
@@ -28,7 +28,7 @@ namespace CoffeeMachine.Tests
         {
             //Arrange
             CoffeeMachine coffeeMachine = new CoffeeMachine();
-            Recipe espressoRecipe = new Recipe(100, 200, 0);
+            Recipe espressoRecipe = new Recipe(100, 200, 0, "name");
 
             //Act 
             coffeeMachine.Brew(coffeeMachine._recipes[RecipeName.Espresso]);
@@ -44,7 +44,7 @@ namespace CoffeeMachine.Tests
         {
             //Arrange
             CoffeeMachine coffeeMachine = new CoffeeMachine();
-            Recipe espressoRecipe = new Recipe(100, 200, 0);
+            Recipe espressoRecipe = new Recipe(100, 200, 0, "name");
             coffeeMachine.Brew(coffeeMachine._recipes[RecipeName.Espresso]);
 
             //Act 

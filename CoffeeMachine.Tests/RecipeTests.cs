@@ -12,7 +12,7 @@ namespace CoffeeMachine.Tests
         public void CreateRecipe_Set_Success()
         {
             //Arrange + Act
-            Recipe recipe = new Recipe(0, 100, 20);
+            Recipe recipe = new Recipe(0, 100, 20, "name");
 
             //Assert
             Assert.Equal(0, recipe.Beans);

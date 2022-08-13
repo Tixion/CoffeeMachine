@@ -14,7 +14,7 @@ namespace CoffeeMachine.Tests
             //Arrange
             BrewingUnit brewer = new BrewingUnit();
             GroundCoffee groundCoffee = new GroundCoffee(100);
-            Recipe recipe = new Recipe(100, 200, 0);
+            Recipe recipe = new Recipe(100, 200, 0, "name");
             Coffee expectedCoffee = new Coffee(recipe);
 
             //Act
